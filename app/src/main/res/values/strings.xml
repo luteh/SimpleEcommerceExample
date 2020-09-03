@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Ecommerce Example</string>
+
+    <string name="login">Login</string>
+    <string name="label_username">Username</string>
+    <string name="lable_password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="home">Home</string>
+    <string name="feed">Feed</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+    <string name="share">Share</string>
+    <string name="title_favorite_product">Favorite Product</string>
+    <string name="title_detail_product">Detail Product</string>
+    <string name="title_purchase_history">Purchase History</string>
+
+    <string name="buy">Buy</string>
+    <string name="placeholder_price">$400</string>
+    <string name="title_placeholder_detail">Nitendo DS Lite</string>
+    <string name="desc_placeholder_detail">The Nintendo DS (abbreviated NDS, DS, or the full name Nintendo Dual Screen, and iQue DS in China) is a handheld game console developed and manufactured by Nintendo, released in 2004. It is visibly distinguishable by its horizontal clamshell design, and the presence of two displays, the lower of which acts as a touchscreen. The system also has a built-in microphone and supports wireless IEEE 802.11 (Wi-Fi) standards, allowing players to interact with each other within short range (10–30 meters, depending on conditions) or over the Nintendo Wi-Fi Connection service via a standard Wi-Fi access point. According to Nintendo, the letters DS in the name stand for Developers\' System and Double Screen, the former of which refers to the features of the handheld designed to encourage innovative gameplay ideas among developers.[43] The system was known as Project Nitro during development. The Nintendo DS (abbreviated NDS, DS, or the full name Nintendo Dual Screen, and iQue DS in China) is a handheld game console developed and manufactured by Nintendo, released in 2004. It is visibly distinguishable by its horizontal clamshell design, and the presence of two displays, the lower of which acts as a touchscreen. The system also has a built-in microphone and supports wireless IEEE 802.11 (Wi-Fi) standards, allowing players to interact with each other within short range (10–30 meters, depending on conditions) or over the Nintendo Wi-Fi Connection service via a standard Wi-Fi access point. According to Nintendo, the letters DS in the name stand for Developers\' System and Double Screen, the former of which refers to the features of the handheld designed to encourage innovative gameplay ideas among developers.[43] The system was known as Project Nitro during development.</string>
+
+    <string name="placeholder_search">Search Product</string>
+    <string name="category">Category</string>
+    <string name="product">Product</string>
+
+    <string name="facebook_app_id">285101855279903</string>
+    <string name="fb_login_protocol_scheme">fb285101855279903</string>
+
+    <string name="title_error">Whoops!</string>
+    <string name="msg_error">Something went wrong. Please try again.</string>
+    <string name="label_retry">Retry</string>
+
+    <string name="facebook">Sign in With Facebook </string>
+
+    <string name="title_share_using">Share using…</string>
+</resources>

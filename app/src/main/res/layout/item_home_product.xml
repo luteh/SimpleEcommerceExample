@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_margin_medium">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_item_product"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_item_product_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_margin_medium"
+        android:src="@drawable/ic_favorite"
+        app:layout_constraintEnd_toEndOf="@id/iv_item_product"
+        app:layout_constraintTop_toTopOf="@id/iv_item_product"
+        app:tint="@color/color_favorite" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_item_product_name"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_margin_small"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@id/tv_item_product_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_item_product"
+        tools:text="@string/title_placeholder_detail" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_item_product_price"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_item_product_name"
+        tools:text="@string/placeholder_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

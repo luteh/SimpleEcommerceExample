@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.activity.detailproduct.DetailProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/padding_margin_medium"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/btn_detail_buy"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_detail_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_margin_medium__"
+                android:src="@drawable/ic_favorite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_detail"
+                app:tint="@color/color_favorite" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_detail_name"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/padding_margin_medium__"
+                android:paddingVertical="@dimen/padding_margin_medium__"
+                app:layout_constraintEnd_toStartOf="@id/iv_detail_favorite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_detail"
+                tools:text="@string/title_placeholder_detail" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_detail_desc"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/padding_margin_medium__"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_name"
+                tools:layout_editor_absoluteX="0dp"
+                tools:text="@string/desc_placeholder_detail" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_detail_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_margin_medium__"
+        android:layout_marginBottom="@dimen/padding_margin_medium"
+        android:text="@string/buy"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_detail_price"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_margin_medium__"
+        app:layout_constraintBottom_toBottomOf="@id/btn_detail_buy"
+        app:layout_constraintEnd_toStartOf="@id/btn_detail_buy"
+        app:layout_constraintTop_toTopOf="@id/btn_detail_buy"
+        tools:text="@string/placeholder_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
